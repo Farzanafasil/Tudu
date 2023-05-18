@@ -1,9 +1,4 @@
-//redirect if not valid login
-let currentUser=JSON.parse(window.localStorage.getItem('user'));
-if(!currentUser){
-    window.location='index.html';
 
-}
 
 
 // code for log out
@@ -15,7 +10,7 @@ $('#logOut').on('click',(e)=>{
     console.log('logout successfully');
 })
 
-// AJAX call to fetch data using axios library.
+// AJAX call to fetch data from API
 
 getList=document.getElementById('getList');
 getList.addEventListener('click',()=>{
@@ -58,17 +53,7 @@ getList.addEventListener('click',()=>{
     } )    
        
 
-    
-        
-    
-    
 
-
-// // call getlist() when GET LIST is clicked.
-// $('#getList').on('click',(e)=>{
-//     e.preventDefault();
-//     getList();
-// });
 
 //variable to keep track of cheking list items
 let checkedCount=0;

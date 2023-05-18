@@ -14,6 +14,7 @@
 #mainnavbar{
     background: rgb(204, 46, 128);
 }
-li:hover{
-    color: white;
+#list:hover{
+
+    color: rgb(18, 14, 14);
 }
